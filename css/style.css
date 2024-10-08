@@ -5,6 +5,27 @@ body {
   margin: 0;
   padding: 0;
 }
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #f5b900;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #f5b900;
+}
 
 header {
   background-color: #121212;
@@ -29,7 +50,6 @@ section {
   max-width: 900px;
   background-color: #2b2b2b;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 section h2 {
@@ -48,7 +68,6 @@ section img {
   width: 100%;
   max-width: 600px;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 ul {
