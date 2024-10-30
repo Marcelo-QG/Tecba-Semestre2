@@ -1,0 +1,173 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #0d0d0d;
+  color: #e6e6e6;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Cambiado para evitar centrar verticalmente */
+  min-height: 100vh;
+}
+
+/* Encabezado */
+.header-container {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+  width: 80%;
+  display: flex; /* Cambiado a flexbox para alinear el logo y el texto */
+  align-items: center; /* Alinear verticalmente */
+}
+
+.logo {
+  width: 120px; /* Mantener tamaño original del logo */
+  height: auto; /* Ajustar automáticamente la altura */
+  margin-right: 15px; /* Espacio a la derecha del logo */
+}
+
+.header-container h1 {
+  color: #ffdd00;
+  font-size: 2.5em;
+  margin: 0;
+  letter-spacing: 1.5px;
+}
+
+/* Barra de navegación */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 15px 0; /* Aumentar padding para hacer la barra más grande */
+  background-color: #111;
+  border-radius: 8px;
+  margin-top: 10px; /* Reducir margen superior */
+}
+
+nav ul li {
+  margin: 0 20px; /* Aumentar margen lateral para más espacio entre elementos */
+}
+
+nav ul li a {
+  color: #ffdd00;
+  text-decoration: none;
+  font-size: 1.2em; /* Aumentar tamaño de fuente para mayor legibilidad */
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #ffdd00;
+  left: 0;
+  bottom: -5px;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  transform: scaleX(1);
+}
+
+nav ul li a:hover {
+  color: #fff;
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto; /* Centrar el contenido principal */
+}
+
+/* Secciones */
+section {
+  margin-bottom: 20px; /* Menor margen entre secciones */
+  background-color: #1a1a1a; /* Fondo oscuro para las secciones */
+  padding: 10px; /* Espaciado alrededor de las imágenes */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+section h2 {
+  font-size: 1.8em;
+  color: #ffdd00;
+  margin-bottom: 10px;
+}
+
+/* Imágenes */
+section img {
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 8px; /* Bordes redondeados */
+  object-fit: cover; /* Mantiene la proporción de la imagen */
+  margin: 5px 0; /* Margen superior e inferior para separar la imagen del texto */
+}
+
+/* Valores en fila */
+.valores ul {
+  display: flex; /* Usar flexbox para alinear en fila */
+  flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px; /* Espacio entre el título y la lista */
+}
+
+.valores ul li {
+  margin-right: 20px; /* Espacio entre los elementos de la lista */
+  font-size: 1.1em;
+  color: #ffdd00; /* Color amarillo para los valores */
+}
+
+/* Separador */
+hr {
+  margin: 20px 0;
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, #ffdd00, #333);
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a1a;
+  padding: 20px;
+  text-align: center;
+  color: #e6e6e6;
+  width: 80%;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+footer p {
+  margin: 5px 0;
+  font-size: 0.9em;
+}
+
+footer .social-media {
+  margin-top: 10px;
+}
+
+footer .social-media a {
+  color: #ffdd00;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+footer .social-media a:hover {
+  color: #fff;
+}
